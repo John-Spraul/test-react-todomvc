@@ -33,7 +33,7 @@ class App extends React.Component {
 
     return (
       <div className="app_container">
-        <div>
+        <div className="box box-centered">
           <p>To-Do</p>
         </div>
         <NewTodo addTodo={this.addTodo} />

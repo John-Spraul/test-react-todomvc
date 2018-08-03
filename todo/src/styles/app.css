@@ -1,5 +1,21 @@
 .app__container {
-  
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 90%;
+  max-width: 300px;
+  border: 3px solid black;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.box-centered {
+  align-items: center;
+  justify-content: center;
 }
 
 .item-completed {
