@@ -18,6 +18,14 @@
   justify-content: center;
 }
 
+.newTodo__input {
+  width: 90%;
+}
+
+.newTodo__button {
+  width: 10%;
+}
+
 .item-completed {
   text-decoration: line-through;
 }

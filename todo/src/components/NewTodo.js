@@ -20,9 +20,9 @@ class NewTodo extends React.Component {
 
   render() {
     return (
-      <form onSubmit={(event) => {this.addTodo(event)}}>
-        <input placeholder="Add New Todo Item" type="text" value={this.state.newTodo} autoFocus onChange={(event) => {this.handleChange(event)}}/>
-        <button type="submit">+</button>
+      <form className="box" onSubmit={(event) => {this.addTodo(event)}}>
+        <input className="newTodo__input" placeholder="Add New Todo Item" type="text" value={this.state.newTodo} autoFocus onChange={(event) => {this.handleChange(event)}} />
+        <button className="newTodo__button" type="submit">+</button>
       </form>
     );
   }
