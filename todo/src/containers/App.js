@@ -12,7 +12,7 @@ class App extends React.Component {
 
   render() {
     const itemsLeft = this.state.todosArr.length;
-
+    const todosArr = [...this.state.todosArr];
 
     return (
       <div className="app_container">
@@ -21,7 +21,7 @@ class App extends React.Component {
         </div>
         <NewTodo />
         <span><strong>{itemsLeft}</strong> item{itemsLeft === 1 ? '' : 's'} left</span>
-        {(todosArr.length !== 0) && <TodoList />}
+        {(todosArr.length !== 0) && <TodoList todos={todosArr} />}
       </div>
     );
   }
