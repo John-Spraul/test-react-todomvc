@@ -14,6 +14,14 @@ class App extends React.Component {
     this.setState(prev => ({ todosArr: [...prev.todosArr, {text: newTodo, completed: false}] }) );
   }
 
+  removeTodo = (index) => {
+    this.setState(prev => ({ todosArr: prev.todosArr.filter((elem, i) => i !== index) }) );
+  }
+
+  toggleCompleted = (index) => {
+    this.setState(prev => ({ todosArr: prev.todosArr.map((elem, i) => i === index ? {text: elem.text, completed: !elem.completed} : elem) }) );
+  }
+
   render() {
     const itemsLeft = this.state.todosArr.length;
     const todosArr = [...this.state.todosArr];
@@ -25,7 +33,7 @@ class App extends React.Component {
         </div>
         <NewTodo addTodo={this.addTodo} />
         <span><strong>{itemsLeft}</strong> item{itemsLeft === 1 ? '' : 's'} left</span>
-        {(todosArr.length !== 0) && <TodoList todos={todosArr} />}
+        {(todosArr.length !== 0) && <TodoList todos={todosArr} removeTodo={this.removeTodo} toggleCompleted={this.toggleCompleted} />}
       </div>
     );
   }
