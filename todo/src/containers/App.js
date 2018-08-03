@@ -10,6 +10,10 @@ class App extends React.Component {
     todosArr = [],
   }
 
+  addTodo = (newTodo) => {
+    this.setState(prev => ({ todosArr: [...prev.todosArr, {text: newTodo, completed: false}] }) );
+  }
+
   render() {
     const itemsLeft = this.state.todosArr.length;
     const todosArr = [...this.state.todosArr];
@@ -19,7 +23,7 @@ class App extends React.Component {
         <div>
           <p>To-Do</p>
         </div>
-        <NewTodo />
+        <NewTodo addTodo={this.addTodo} />
         <span><strong>{itemsLeft}</strong> item{itemsLeft === 1 ? '' : 's'} left</span>
         {(todosArr.length !== 0) && <TodoList todos={todosArr} />}
       </div>
