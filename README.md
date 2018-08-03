@@ -30,4 +30,4 @@ To run this app, navigate into the directory and run `npm i` in terminal. Once t
 
 ## Credit
 
-Created by [JohnSpraul](elijah@spraul.net)
+Created by [John Spraul](https://www.linkedin.com/in/john-spraul/)
