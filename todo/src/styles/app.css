@@ -1,3 +1,15 @@
 .app__container {
   
 }
+
+.item-completed {
+  text-decoration: line-through;
+}
+
+.button__remove-todo {
+  visibility: hidden;
+}
+
+.todo-item:hover .button__remove-todo {
+  visibility: visible;
+}
