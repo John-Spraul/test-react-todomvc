@@ -32,7 +32,7 @@ class App extends React.Component {
     const todosArr = [...this.state.todosArr];
 
     return (
-      <div className="app_container">
+      <div className="app__container">
         <div className="box box-centered">
           <p>To-Do</p>
         </div>
