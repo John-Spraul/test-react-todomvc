@@ -26,7 +26,7 @@ Displays the number of active todos in a pluralized form.
 
 This To-Do App was initialized using create-react-app. All DOM manipulation is handled with REACT or CSS.
 
-To run this app, navigate into the directory and run `npm i` in terminal. Once that is done, run `npm start`.
+To run this app, navigate into the `todo` directory and run `npm i` in terminal. Once that is done, run `npm start`.
 
 ## Credit
 
