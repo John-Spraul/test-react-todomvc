@@ -18,12 +18,36 @@
   justify-content: center;
 }
 
+.box-column {
+  flex-direction: column;
+}
+
+.box-todo {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 3px solid grey;
+}
+
+.box-todo span {
+  margin-right: auto;
+  max-width: 90%;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .newTodo__input {
   width: 90%;
 }
 
 .newTodo__button {
   width: 10%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .item-completed {
