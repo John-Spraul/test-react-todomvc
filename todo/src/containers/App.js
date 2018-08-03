@@ -7,7 +7,7 @@ import '../styles/app.css';
 
 class App extends React.Component {
   state = {
-    todosArr = [],
+    todosArr: [],
   }
 
   addTodo = (newTodo) => {
