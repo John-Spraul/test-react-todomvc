@@ -23,7 +23,12 @@ class App extends React.Component {
   }
 
   render() {
-    const itemsLeft = this.state.todosArr.length;
+    const itemsLeft = this.state.todosArr.reduce((memo, elem) => {
+      if (!elem.completed) {
+        return memo + 1;
+      }
+      return memo;
+    }, 0);
     const todosArr = [...this.state.todosArr];
 
     return (
